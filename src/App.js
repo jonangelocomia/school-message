@@ -7,6 +7,7 @@ import './App.css'
 import Create from './page/create/Create';
 import Join from './page/join/Join';
 import Test from './page/test/Test';
+import View from './page/view/View';
 
 class App extends Component {
   render () {
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path='/create' render={ () => <Create { ...this.props } /> } />
           <Route path='/join' render={ () => <Join { ...this.props } /> } />
+          <Route path='/view' render={ () => <View { ...this.props } /> } />
           <Route path='/' render={ () => <Test { ...this.props } /> } />
         </Switch>
       </Fragment>
